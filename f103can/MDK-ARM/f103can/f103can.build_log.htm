@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Redmi, 1, LIC=IK1BF-6ZYPX-633MB-2K7KW-5HIEC-CK8JL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\MDK5.36\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\Ð¡Ñý\rcµç¿Ø\f103can\MDK-ARM\f103can.uvprojx
+Project File Date:  12/24/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\MDK5.36\ARM\ARMCC\Bin'
+Rebuild target 'f103can'
+compiling can.c...
+../Core/Src/can.c(117): error:  #20: identifier "chassis_tx_message" is undefined
+      chassis_tx_message.StdId = CAN_CHASSIS_ALL_ID;
+../Core/Src/can.c(121): error:  #20: identifier "chassis_can_send_data" is undefined
+      chassis_can_send_data[0] = motor1 >> 8;
+../Core/Src/can.c(130): error:  #20: identifier "can1" is undefined
+  	HAL_CAN_AddTxMessage(&can1, &chassis_tx_message, chassis_can_send_data, &send_mail_box);
+../Core/Src/can.c: 0 warnings, 3 errors
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling main.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_can.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_flash_ex.c...
+"f103can\f103can.axf" - 3 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_f103can
+  C:\MDK5.36\pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\MDK5.36\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
